@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">  
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+<main class="page">
+
+  <section class="cards">
+    <div class="card card-front">
+      <p class="card-number" id="text-number">0000 0000 0000 0000</p>
+      <div>
+        <p class="cardholder-name" id="text-name">Jane Appleseed</p>
+        <p class="card-date"><span id="text-date-m">00</span>/<span id="text-date-y">00</span></p>
+      </div>
+    </div>
+
+    <div class="card card-back">
+      <p class="cvc" id="text-cvc">000</p>
+    </div>
+  </section>
+
+  <section class="informations " id='informations'>
+    <div class="form-group">
+      <label for="name">Cardholder Name</label>
+      <input type="text" placeholder="e.g. Jane Appleseed" name="name" id="input-name">
+      <label for="card-number">Card Number</label>
+      <input type="text" name="card-number" id="input-number" placeholder=" e.g. 1234 5678 9123 0000">
+  <div class="info-row">
+
+    <div>
+      <label for="date">Exp. Date (MM/YY)</label>
+      <input type="number" name="date" id="input-date-m" placeholder=" MM" class="input-date">
+      <input type="number" name="date" id="input-date-y" placeholder="YY" class="input-date" > 
+      
+    </div>
+     
+    <div>
+      <label for="cvc">CVC</label>
+     <input type="text" name="cvc" id="input-cvc" placeholder="e.g. 123">
+    </div>
+  </div>
+
+    <p class="error" id="error"></p>
+
+    <button class="confirm" id="btn-confirm"> Confirm</button>
+
+    </div>
+
+    </section>
+   <section class="completed hidden" id="completed">
+    <div>
+      <img src="./images/icon-complete.svg" alt="">
+
+      <h2>
+        Thank you!
+      </h2>
+      <p>
+        We've added your card details
+      </p>  
+    
+      <button class="confirm">
+        Continue
+      </button>
+    </div>
+  </section>
+
+</main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mário Anthony</a>.
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+</html>
